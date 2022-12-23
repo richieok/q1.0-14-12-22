@@ -6,7 +6,6 @@
     let menuList = [
         { name: "home", href: "/" },
         { name: "contact", href: "/contact" },
-        { name: "test", href: "/test" },
     ];
 </script>
 
