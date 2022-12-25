@@ -1,4 +1,5 @@
 <script>
+    import {fade} from "svelte/transition"
     import ContactUs from "../../lib/components/forms/ContactUs.svelte";
     const inputsStuff = [
         { htmltag: "input", name: 'email', type: 'email', placeholder: 'abcd@efg.xyz'},
@@ -10,7 +11,7 @@
     <title>Contact Us</title>
 </svelte:head>
 
-<div>
+<div transition:fade>
     <ContactUs {inputsStuff}/>
 </div>
 

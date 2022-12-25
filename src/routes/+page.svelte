@@ -1,4 +1,5 @@
 <script>
+    import {fade} from "svelte/transition"
     import Controls from "./Controls.svelte";
     let c1;
     let p1;
@@ -16,7 +17,7 @@
     <title>Qubit Tech</title>
 </svelte:head>
 
-<div class="outer">
+<div class="outer" transition:fade>
     <div class="center">
         <svg xmlns="http://www.w3.org/2000/svg">
             <path bind:this={c1} id="circle" d="M50 150 A 100 100 0 1 1 250 150" 
